@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.ioann_000.cainstructionquiz.Main_PlayActivity"
+    android:background="@drawable/math">
+
+
+
+    <TextView
+        android:text="@string/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:textStyle="normal|bold|italic"
+        android:id="@+id/questionNumberTextView"
+        android:textColor="@android:color/black" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:layout_alignParentStart="true"
+            android:theme="@android:style/Theme.DeviceDefault.Settings" />
+    </android.support.design.widget.AppBarLayout>
+
+
+<TextView
+        android:layout_marginBottom="25dp"
+        android:id="@+id/answerTextView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/Write_EditText"
+        android:hint="@string/InsertHint"
+        android:textStyle="normal|italic"
+        android:textSize="15sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="200dp"
+        android:layout_below="@+id/InsertTXTview"
+        android:layout_alignStart="@+id/InsertTXTview"
+        android:layout_marginStart="12dp"
+        android:textAlignment="center"
+        android:singleLine="false"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:textColorHighlight="@android:color/holo_blue_dark"
+        android:textColorHint="?attr/actionMenuTextColor"
+        android:textCursorDrawable="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:text="@string/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/InsertTXTview"
+        android:textStyle="normal|bold|italic"
+        android:layout_marginTop="143dp"
+        android:layout_below="@+id/questionNumberTextView"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/num1TxtView"
+        android:layout_marginBottom="64dp"
+        android:textSize="18sp"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/Write_EditText"
+        android:layout_alignStart="@+id/questionNumberTextView"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/num2TxtView"
+        android:textSize="18sp"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/HowTxtView"
+        android:layout_alignEnd="@+id/questionNumberTextView"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/opTxtView"
+        android:textSize="15sp"
+        android:layout_width="20dp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_height="25dp"
+        android:layout_alignBaseline="@+id/num2TxtView"
+        android:layout_alignBottom="@+id/num2TxtView"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HowTxtView"
+        android:layout_toStartOf="@+id/InsertTXTview"
+        android:id="@+id/qtxt" />
+
+    <TextView
+        android:text="@string/howmuch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/HowTxtView"
+        android:layout_marginBottom="17dp"
+        android:textStyle="normal|bold|italic"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/num1TxtView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/Check"
+        android:id="@+id/check_btn"
+        android:layout_marginTop="58dp"
+        android:background="@drawable/checkbutton"
+        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:layout_below="@+id/Write_EditText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/Strogilopoihsh"
+        android:layout_height="wrap_content"
+        android:id="@+id/roundTxtView"
+        android:textSize="10sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black"
+        android:layout_width="200dp"
+        android:layout_below="@+id/check_btn"
+        android:layout_alignEnd="@+id/InsertTXTview"
+        android:layout_marginTop="17dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="com.example.ioann_000.cainstructionquiz.PlayActivity"
+    android:clickable="false"
+    android:animationCache="false"
+    android:clipChildren="false"
+    android:contextClickable="false"
+    android:filterTouchesWhenObscured="false"
+    android:layout_alignParentBottom="false"
+    android:layout_alignParentRight="false"
+    android:saveEnabled="false">
+
+
+    <TextView
+        android:text="@string/CainstructionQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/CainTxtView"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="normal|italic" />
+
+    <Button
+        android:id="@+id/exit_btn"
+
+        android:textColor="#121111"
+        android:textSize="30sp"
+
+        android:layout_width="120dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="7"
+        android:shadowDy="-2"
+        android:shadowRadius="25"
+        android:layout_height="39dp"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="ΕΞΟΔΟΣ"
+        android:elevation="0dp" />
+
+    <Button
+        android:id="@+id/Start_btn"
+
+        android:text="@string/PlayTxt"
+        android:textColor="#121111"
+        android:textSize="30sp"
+
+        android:layout_width="120dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="7"
+        android:shadowDy="-2"
+        android:shadowRadius="25"
+        android:layout_height="39dp"
+        android:layout_marginBottom="24dp"
+        android:layout_above="@+id/exit_btn"
+        android:layout_alignStart="@+id/exit_btn" />
+
+    <ImageView
+
+        android:layout_width="200dp"
+        android:src="@drawable/maths_0"
+        android:id="@+id/imageView2"
+        android:layout_height="150dp"
+        android:layout_marginBottom="74dp"
+        android:layout_above="@+id/Start_btn"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

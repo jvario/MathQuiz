@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.ioann_000.cainstructionquiz.ChoiceActivity"
+    android:background="@drawable/math">
+
+    <Button
+        android:text="@string/sub"
+        android:id="@+id/sub_button"
+        android:textSize="50sp"
+        android:background="@drawable/buttonshape4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/div_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:layout_alignParentStart="true"
+        android:theme="@android:style/Theme.DeviceDefault.Settings" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <Button
+        android:text="@string/multi"
+        android:layout_height="70dp"
+        android:id="@+id/multi_button"
+        android:background="@drawable/buttonshape1"
+        tools:text="@string/multi"
+        android:textSize="30sp"
+        android:layout_width="70dp"
+        android:layout_alignTop="@+id/div_button"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="@string/add"
+        android:layout_height="70dp"
+        android:id="@+id/add_button"
+        android:textSize="30sp"
+        android:background="@drawable/buttonshape3"
+        android:textColor="@android:color/background_light"
+        android:layout_width="70dp"
+        android:layout_marginEnd="29dp"
+        android:layout_below="@+id/QtxtView"
+        android:layout_toStartOf="@+id/sub_button" />
+
+    <Button
+        android:text="@string/Div"
+        android:id="@+id/div_button"
+        android:background="@drawable/buttonshape2"
+        android:textSize="30sp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="119dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/QtxtView"
+        android:layout_marginStart="11dp" />
+
+    <TextView
+        android:text="@string/DescInputTxt"
+        android:id="@+id/QtxtView"
+        android:textStyle="normal|bold|italic"
+        android:textColor="@android:color/background_dark"
+        android:fontFamily="serif"
+        android:layout_marginBottom="84dp"
+        android:layout_width="200dp"
+        android:layout_above="@+id/sub_button"
+        android:layout_toStartOf="@+id/sub_button"
+        android:layout_height="50dp" />
+
+</RelativeLayout>
