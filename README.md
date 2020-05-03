@@ -20,6 +20,6 @@ compile 'com.android.support:appcompat-v7:24.2.1'
 * **Giannis Variozidis** - *Initial work* - [jvario](https://github.com/jvario)
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](license.md) file for details
 
 
