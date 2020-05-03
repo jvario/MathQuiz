@@ -2,13 +2,9 @@
 An Android e-learning application for primary school children helping them learn  the basic four operations in math. This is a university project.
 
 ## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
-
-What things you need to install the software and how to install them
-
 ```
 compile 'com.android.support:support-v4:24.2.1'
 compile 'com.android.support:design:24.2.1'
