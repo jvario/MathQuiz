@@ -1,2 +1,4 @@
-# CainstructionQuiz
-An amateur quiz (Android app) that refers to kids and make them doing the basics mathematical operations.
+# MathQuiz
+An Android e-learning application for primary school children helping them learn math
+
+
